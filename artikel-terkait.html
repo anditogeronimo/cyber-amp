@@ -24,76 +24,77 @@ margin:20px 0 0 -25px;
 padding: 0;
 overflow:hidden;
 }
+.related-post {
+margin: 30px auto 0;
+overflow: hidden;
+}
 .related-post h4 {
-font-weight: 700;
-font-size:120%;
-margin:10px 0 20px 25px;
+position:relative;
+margin: 0;
+display: inline-block;
+font-weight: 500;
+color: #afafaf;
+text-transform: uppercase;
+font-size: 16px;
+z-index: 1;
+background: #fff;
+padding: 0 10px;
+}
+.related-post ul {
+padding: 0 !important;
+font-size: 14px;
 }
 /* Style 3 */
-ul.related-post-style-3{
-list-style:none;
-margin:0;
-padding-left:16px;
-width:100%;
--moz-box-sizing:border-box;
--webkit-box-sizing:border-box;
-box-sizing:border-box;
-}
-.related-post-style-3 li a{
-color: #212121;
-font-weight:400 !important;
-line-height:1.4em;
-}
-.related-post-style-3 li a:hover{
-color: #0379C4;
+.related-post-style-3,
+.related-post-style-3 li {
+margin: 0;
+padding: 0;
+list-style: none;
+word-wrap: break-word;
+overflow: hidden;
 }
 .related-post-style-3 .related-post-item {
-display:block;
-float:left;
-width:22.2%;
-height:auto;
-padding:0 10px;
-border-left:1px solid #eee;
-margin-bottom:-989px;
-padding-bottom:999px;
-list-style:none;
-word-wrap:break-word;
+float: left;
+width: 23.5%;
+height: auto;
+margin-right: 2%;
+margin-bottom: 10px;
 }
-.related-post-style-3 .related-post-item:first-child {border-left:none}
-.related-post-style-3 .related-post-item:last-child {padding-right:0}
+.related-post-style-3 .related-post-item:nth-of-type(4n+0) {
+margin-right: 0;
+}
+.related-post-style-3 .related-post-item:hover {
+opacity: 0.7;
+}
 .related-post-style-3 .related-post-item-thumbnail {
-display:block;
-margin:0 0 10px;
-width:100%;
-height:auto;
-max-width:none;
-background-color:transparent;
-border:none;
-padding:0;
+display: block;
+max-height: none;
+background-color: transparent;
+border: none;
+padding: 0;
+max-width: 100%;
 }
-.related-post-style-3 .related-post-item-title {font-weight:bold}
-@media screen and (max-width:650px){
-.related-post-style-3 .related-post-item
-{width:22%}
-padding-bottom:20px;
+.related-post-style-3 .related-post-item-title {
+color: #444;
 }
-@media screen and (max-width:610px){
-.related-post-style-3 .related-post-item
-{width:21%}
-padding-bottom:20px;
+.related-post-style-3 .related-post-item-tooltip {
+padding: 10px 0;
 }
-@media screen and (max-width:420px){
-.related-post-style-3 .related-post-item
-{width:43%}
-padding-bottom:50px;
+.related-post-item-tooltip .related-post-item-title {
+font-weight: 500;
+display: block;
 }
-@media screen and (max-width:420px){
-.related-post-style-3 .related-post-item
-{width:95%;height:auto;position: relative;border-bottom: 1px solid #e1e1e1}
-.related-post-style-3 .related-post-item-thumbnail{
-width: 30%}
-.related-post-style-3 .related-post-item-tooltip{
-margin-left: 32%;position: absolute;top: 10px;}
+@media only screen and (max-width:480px){
+.related-post-style-3 .related-post-item {
+width: 48%;
+margin-right: 4%;
+}
+.related-post-style-3 .related-post-item:nth-of-type(2n+0) {
+margin-right: 0;
+}
+.related-post-style-3 .related-post-item:nth-of-type(2n+1) {
+clear: both;
+}
 }
 </style>
 </head>
